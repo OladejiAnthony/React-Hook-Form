@@ -189,6 +189,7 @@ export const YouTubeForm = () => {
             type="email"
             id="email"
             {...register("email", {
+              required: "Email is required",
               pattern: {
                 value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                 message: "Invalid email format",
